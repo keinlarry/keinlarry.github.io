@@ -3,71 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bienvenue sur mon Portfolio !</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio Data Scientist - Optimisation Mathématiques">
+    <title>Mon Portfolio | Data Scientist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* GLOBAL */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #2c3e50;
+            color: white;
+            padding: 15px 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            font-size: 16px;
+            color: white;
+            padding: 5px 10px;
+        }
+        nav ul li a:hover {
+            background-color: #34495e;
+            border-radius: 5px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-color: #2980b9;
+            color: white;
+            padding: 150px 50px;
+            text-align: center;
+            height: 100vh;
+        }
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+        .hero button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #c0392b;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 50px;
+            margin: 20px 0;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 50px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border: 1px solid #ecf0f1;
+            border-radius: 10px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        .project-card h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .project-card p {
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        .skills, .about, .contact {
+            background-color: #ecf0f1;
+        }
+
+        .skills ul, .about ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills ul li, .about ul li {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+        .contact form {
+            display: inline-block;
+            text-align: left;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: 1px solid #ecf0f1;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #27ae60;
+        }
+
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon portfolio!</h1>
-    </header>
-    <h2>A propos de moi</h2>
-    <p>Je m'appelle Kein et je m'intéresse à tout ce qui touche aux mathématiques, à la data science et à l'apprentissage automatique. Je vis actuellement à Limoges (France). Pendant mon temps libre, j'aime regarder la NBA, des séries, et explorer différents genres musicaux autour d'une tasse de café (sans ordre particulier).
-  
-  Consultez mon portfolio pour voir tous mes projets & compétences.</p>
 
-    <h2>Projets</h2>
-    <div>
-        <img align="left" width="250" height="150" src="Image/creditcard.jpeg" style="margin-right: 15px;" alt="Carte de crédit">
-        <h3><a href="https://github.com/keinlarry/CreditCard-Fraud-Detection" target="_blank" rel="noopener noreferrer">Détection de fraude de carte de crédit</a></h3>
+<!-- NAVBAR -->
+<nav>
+    <ul>
+        <li><a href="#hero">Accueil</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-        <p>Dans ce projet, je développe un algorithme basé sur des réseaux de neurones pour aider la société ABC à détecter les transactions frauduleuses plus efficacement. En utilisant la programmation orientée objet, je conçois une solution modulable capable de traiter un grand volume de données provenant des informations des cartes et des transactions entre août et octobre.</p>
-    </div>
-    <div style="clear:both;"></div>
-    <hr>
-  
-    <div>
-      <img align="left" width="250" height="150" src="Image/Titanic.jpeg" style="margin-right: 15px;" alt="Titanic">
-      <h3>Analyse des Survivants du Titanic</h3>
-      <p>Ce projet explore les facteurs qui influencent la survie des passagers du Titanic. Une analyse des données (EDA) a été menée pour identifier les tendances et les corrélations, suivie de la construction de modèles de classification (Logistic Regression et Random Forest). Le modèle final atteint une précision de 80% sur les données de test et met en évidence des variables clés telles que le sexe, la classe et l'âge des passagers.</p>
-    </div>
-    <div style="clear:both;"></div>
-    <hr>
-  
-    <div>
-      <img align="left" width="250" height="150" src="Image/éolienne.webp" style="margin-right: 15px;" alt="éolienne">
-      <h3><a href="https://github.com/keinlarry/Wind-Turbine-Power/tree/main">Prédiction de la Production d’un Champ d’Éoliennes</a></h3>
-      <p>Dans ce projet, j'ai utilisé des données météorologiques pour prédire la production énergétique d'un champ d'éoliennes. Une analyse exploratoire détaillée a été réalisée pour comprendre les relations entre les variables, suivie de la création et de l'évaluation d'un modèle de régression basé sur Random Forest. Le modèle final atteint un R² de 0.85 et est capable de prédire efficacement la production à venir.</p>
-    </div>
-    <div style="clear:both;"></div>
-  
-    <h2>Micro Projets</h2>
-    <ul>
-      <li><a href="https://github.com/keinlarry/Acad-mique/blob/main/Algorithme%20du%20perceptron.ipynb">Algorithme du perceptron</a> : Dans ce projet, j'ai implémenté l'algorithme du perceptron pour effectuer une classification binaire. J'ai créé un dataset, standardisé les données, et évalué les performances du modèle à l'aide de métriques comme la précision.</li>
-      <li><a href="">Neural Network Implementation</a> : Implémentation d'un réseau de neurones simple utilisant la propagation avant, la propagation arrière et des fonctions d'optimisation pour prédire la perte de clients.</li>
-      <li><a href="">Genetic Algorithm</a> : Implémentation d'un algorithme génétique simple qui trouve une liste de nombres égaux à un nombre spécifié lorsqu'ils sont additionnés ensemble.</li>
-      <li><a href="">Bayesian Statistics</a> : Exploration du fonctionnement des statistiques bayésiennes et de la manière dont les hypothèses a priori reflètent les probabilités postérieures à l'aide de l'exemple du contrôle des armes.</li>
-      <li><a href="">Gaussian Mixture Model and Expectation Maximization</a> : Implémentation de l'algorithme de l'Expectation Maximization pour trouver la vraie distribution d'un GMM unidimensionnel de 2 gaussiennes.</li>
-      <li><a href="">Linear Regression</a> : Résolution de la régression linéaire en utilisant la méthode analytique et en implémentant les algorithmes de descente de gradient, descente de gradient stochastique et descente de gradient en mini-batch.</li>
-      <li><a href="">Neural Network Implementation</a> : Implémentation d'un réseau de neurones simple utilisant la propagation avant, la propagation arrière et des fonctions d'optimisation pour prédire la perte de clients.</li>
-    </ul>
-  
-    <h2>Compétences de base</h2>
-    <ul>
-      <li><strong>Méthodologies</strong>: Machine Learning, Deep Learning, Natural Language Processing, Statistiques, Algèbre Linéaire, Big Data Analytics</li>
-      <li><strong>Langages</strong>: Python (Pandas, Numpy, Scikit-Learn, Scipy, Keras, Matplotlib), R (Dplyr, Tidyr, Caret, Ggplot2), SQL, C, Matlab, AMPL</li>
-    </ul>
-    
-    <!-- Social -->
-        <div class="social">
-          <div class="contact-icons">
-                 <a href="mailto:archdesai.ad@gmail.com" title="email"><i class="fas fa-envelope"></i></a>
-                 <a href="https://github.com/archd3sai" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                 <a href="https://www.linkedin.com/in/archd3sai" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                 <a href="https://www.instagram.com/arch_d3sai" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-          </div>
-          <div class="contact-note">
-              The best way to contact me is through email.
-          </div>
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+    <h1>Bonjour, je suis [Ton Nom]</h1>
+    <p>Data Scientist | Optimisation | Machine Learning | Deep Learning</p>
+    <button onclick="window.location.href='#contact'">Contactez-moi</button>
+</section>
+
+<!-- PROJETS -->
+<section id="projects">
+    <h2>Mes Projets</h2>
+    <div class="projects-grid">
+        <!-- Exemple de projet -->
+        <div class="project-card">
+            <h3>Optimisation d'un modèle XGBoost</h3>
+            <p>Amélioration des performances avec une approche Bayesian Optimization. <a href="#">Voir le projet</a></p>
         </div>
-  </body>  
+        <div class="project-card">
+            <h3>Prédiction de la demande énergétique</h3>
+            <p>Modèle de séries temporelles pour prévoir la consommation d'énergie. <a href="#">Voir le projet</a></p>
+        </div>
+        <!-- Ajoute plus de projets ici -->
+    </div>
+</section>
+
+<!-- COMPÉTENCES -->
+<section id="skills" class="skills">
+    <h2>Mes Compétences</h2>
+    <ul>
+        <li>Python</li>
+        <li>Machine Learning</li>
+        <li>Optimisation</li>
+        <li>Deep Learning</li>
+        <li>SQL</li>
+        <!-- Ajoute d'autres compétences -->
+    </ul>
+</section>
+
+<!-- À PROPOS -->
+<section id="about" class="about">
+    <h2>À propos de moi</h2>
+    <p>Je suis un étudiant en Master de Mathématiques Appliquées, spécialisé dans l'optimisation et la data science. Passionné par la résolution de problèmes complexes avec des algorithmes avancés, j'applique des modèles mathématiques et des techniques d'apprentissage automatique pour trouver des solutions concrètes.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contactez-moi</h2>
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <textarea placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+
+</body>
 </html>

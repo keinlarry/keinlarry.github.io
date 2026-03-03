@@ -1,71 +1,3 @@
-/* -------- STYLE GLOBAL -------- */
-
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #0f172a;
-    color: white;
-}
-
-/* Marge de 4cm gauche/droite */
-.page-container {
-    margin-left: 4cm;
-    margin-right: 4cm;
-}
-
-/* -------- NAVBAR -------- */
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-nav ul {
-    display: flex;
-    gap: 30px;
-    list-style: none;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-/* -------- PHOTO HAUT GAUCHE -------- */
-
-.profile-pic {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #38bdf8;
-}
-
-/* -------- HERO -------- */
-
-.hero {
-    padding: 100px 0;
-}
-
-.btn {
-    background-color: #38bdf8;
-    padding: 12px 25px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
 /* -------- CARTES PROJETS -------- */
 
 .cards {
@@ -76,17 +8,20 @@ nav a:hover {
 }
 
 .card {
+    display: block; /* Important pour que le lien prenne toute la place */
     background-color: #1e293b;
     border-radius: 15px;
-    display: flex;
-    gap: 25px;
     padding: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none; /* Enlève le soulignement */
+    color: inherit; /* Garde la couleur de texte initiale */
+    overflow: hidden; /* Pour bien englober l'image en float */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* conserve l'effet existant */
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px); /* petit ajustement selon ton goût */
     box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+    background-color: #f9f9f9; /* Change légèrement le fond */
 }
 
 .card img {
@@ -109,15 +44,4 @@ nav a:hover {
     margin-top: 15px;
     color: #38bdf8;
     text-decoration: none;
-}
-
-/* -------- FOOTER -------- */
-
-footer {
-    margin-top: 80px;
-    padding: 30px 0;
-    text-align: center;
-    border-top: 1px solid #334155;
-    color: #94a3b8;
-    font-size: 14px;
 }

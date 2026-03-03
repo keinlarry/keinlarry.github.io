@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <title>Kein | Data Scientist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Google Font -->
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Plotly -->
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
 
+<!-- PHOTO -->
+<img src="images/photo.jpg" alt="Photo de Kein" class="profile-pic">
+
+<div class="page-container">
+
 <nav>
-    <div class="logo">Kein</div>
+    <div><strong>Kein</strong></div>
     <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="projets.html">Projets</a></li>
@@ -28,48 +29,58 @@
 </nav>
 
 <section class="hero">
-    <div class="hero-text">
-        <h1>Bienvenue sur mon portfolio</h1>
-        <p>Data Scientist spécialisé en Machine Learning et Optimisation.
-        Passionné par la modélisation, la performance et l'impact réel des modèles.</p>
-        <a href="projets.html" class="btn">Voir mes projets</a>
-    </div>
+    <h1>Bienvenue sur mon portfolio</h1>
+    <p>
+        Data Scientist spécialisé en Machine Learning et Optimisation.
+        J'aime transformer les données en décisions stratégiques.
+    </p>
 </section>
 
-<section class="projects-preview">
+<section>
     <h2>Derniers projets</h2>
 
     <div class="cards">
 
         <div class="card">
-            <h3>Fraude Bancaire</h3>
-            <p>Deep Learning – Classification</p>
-            <a href="https://github.com/keinlarry/CreditCard-Fraud-Detection" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+            <img src="images/creditcard.gif" alt="Fraude bancaire">
+            <div class="card-content">
+                <h3>Détection de fraude bancaire</h3>
+                <p>Développement d’un modèle de Deep Learning pour détecter
+                des transactions frauduleuses sur des données volumineuses.</p>
+                <a href="https://github.com/keinlarry/CreditCard-Fraud-Detection"
+                   target="_blank" rel="noopener noreferrer">
+                   Voir le projet →
+                </a>
+            </div>
         </div>
 
         <div class="card">
-            <h3>Titanic ML</h3>
-            <p>Random Forest – 80% accuracy</p>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Voir le projet</a>
-        </div>
-
-        <div class="card">
-            <h3>Wind Power</h3>
-            <p>Regression – R² 0.85</p>
-            <a href="https://github.com/keinlarry/Wind-Turbine-Power" target="_blank" rel="noopener noreferrer">Voir le projet</a>
+            <img src="images/titanic.jpg" alt="Titanic ML">
+            <div class="card-content">
+                <h3>Analyse Titanic</h3>
+                <p>Exploration des facteurs de survie et modélisation
+                via Random Forest et Régression Logistique.</p>
+                <a href="#" target="_blank">Voir le projet →</a>
+            </div>
         </div>
 
     </div>
 </section>
 
-<section class="data-section">
-    <h2>Compétences en action</h2>
+<section>
+    <h2>Compétences</h2>
     <div id="skillsChart"></div>
 </section>
 
+<footer>
+    © 2026 Kein — Tous droits réservés
+</footer>
+
+</div>
+
 <script>
 var data = [{
-    x: ['Python', 'ML', 'Deep Learning', 'SQL', 'Optimisation'],
+    x: ['Python', 'Machine Learning', 'Deep Learning', 'SQL', 'Optimisation'],
     y: [95, 90, 85, 80, 88],
     type: 'bar'
 }];

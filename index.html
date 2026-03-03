@@ -31,13 +31,15 @@
 <section class="hero">
     <h1>Bienvenue sur mon portfolio</h1>
     <p>
-        Data Scientist spécialisé en Machine Learning et Optimisation.
-        J'aime transformer les données en décisions stratégiques.
+        Chaque dataset a une histoire à raconter, et mon rôle est d'en être
+        l'interprète. À travers les projets présentés ici, vous découvrirez comment
+        j'utilise Python, les statistiques et la visualisation pour donner une voix aux
+        chiffres. Mon objectif : rendre la donnée non seulement intelligente, mais aussi intelligible pour tous.
     </p>
 </section>
 
 <section>
-    <h2>Derniers projets</h2>
+    <h2>Mes derniers projets</h2>
 
     <div class="cards">
 
@@ -55,45 +57,22 @@
         </div>
 
         <div class="card">
-            <img src="images/titanic.jpg" alt="Titanic ML">
-            <div class="card-content">
-                <h3>Analyse Titanic</h3>
-                <p>Exploration des facteurs de survie et modélisation
-                via Random Forest et Régression Logistique.</p>
-                <a href="#" target="_blank">Voir le projet →</a>
+            <div>
+               <img align="left" width="250" height="150" src="Image/Titanic.jpeg" style="margin-right: 15px;" alt="Titanic">
+              <h3>Analyse des Survivants du Titanic</h3>
+              <p>Ce projet explore les facteurs qui influencent la survie des passagers du Titanic. 
+                  Une analyse des données (EDA) a été menée pour identifier les tendances et les corrélations, 
+                  suivie de la construction de modèles de classification (Logistic Regression et Random Forest). 
+                  Le modèle final atteint une précision de 80% sur les données de test et met en évidence des variables 
+                  clés telles que le sexe, la classe et l'âge des passagers.</p>
             </div>
         </div>
 
     </div>
 </section>
 
-<section>
-    <h2>Compétences</h2>
-    <div id="skillsChart"></div>
-</section>
-
+</body>
 <footer>
     © 2026 Kein — Tous droits réservés
 </footer>
-
-</div>
-
-<script>
-var data = [{
-    x: ['Python', 'Machine Learning', 'Deep Learning', 'SQL', 'Optimisation'],
-    y: [95, 90, 85, 80, 88],
-    type: 'bar'
-}];
-
-var layout = {
-    title: 'Niveau de compétences (%)',
-    paper_bgcolor: '#0f172a',
-    plot_bgcolor: '#0f172a',
-    font: { color: 'white' }
-};
-
-Plotly.newPlot('skillsChart', data, layout);
-</script>
-
-</body>
 </html>

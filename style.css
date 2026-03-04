@@ -19,12 +19,12 @@ a {
 }
 
 /* ============================= */
-/*      MARGE 4CM PAGE          */
+/*      MARGE 5CM PAGE          */
 /* ============================= */
 
 .page-container {
-    margin-left: 4cm;
-    margin-right: 4cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
 }
 
 /* ============================= */
@@ -271,3 +271,4 @@ footer {
         height: 80px;
     }
 }
+

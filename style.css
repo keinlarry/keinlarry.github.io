@@ -48,11 +48,15 @@ a {
 /*           NAVBAR             */
 /* ============================= */
 
-nav {
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
+}*/
+
+nav {
+    padding: 15px 0; /* moitié du padding précédent */
 }
 
 nav ul {
@@ -76,9 +80,14 @@ nav a:hover {
 /*           HERO               */
 /* ============================= */
 
-.hero {
+/* .hero {
     padding: 100px 0 80px 0;
     max-width: 900px;
+} */
+
+.hero {
+    padding-top: 50px; /* réduit l’espace au-dessus */
+    padding-bottom: 60px; /* conserve un peu de marge sous la section */
 }
 
 .hero h1 {
@@ -377,6 +386,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

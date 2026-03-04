@@ -80,20 +80,20 @@ nav a:hover {
 /*           HERO               */
 /* ============================= */
 
-/* .hero {
+ .hero {
     padding: 100px 0 80px 0;
     max-width: 900px;
-} */
+} 
 
 /* .hero {
     padding-top: 50px; /* réduit l’espace au-dessus */
     padding-bottom: 60px; /* conserve un peu de marge sous la section */
 }*/
 
-.hero {
+/* .hero {
     padding-top: 20px; /* ou la hauteur exacte du nav */
     margin-top: 0;
-}
+}*/
 
 .hero h1 {
     font-size: 44px;
@@ -391,6 +391,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

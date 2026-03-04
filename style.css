@@ -48,16 +48,16 @@ a {
 /*           NAVBAR             */
 /* ============================= */
 
-/* nav {
+ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-}*/
-
-nav {
-    padding: 15px 0; /* moitié du padding précédent */
 }
+
+/*nav {
+    padding: 15px 0; /* moitié du padding précédent */
+}*/
 
 nav ul {
     display: flex;
@@ -391,6 +391,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

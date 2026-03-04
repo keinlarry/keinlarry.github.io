@@ -56,7 +56,7 @@ a {
 }
 
 /*nav {
-    padding: 15px 0; /* moitié du padding précédent */
+    padding: 15px 0; 
 }*/
 
 nav ul {
@@ -86,12 +86,12 @@ nav a:hover {
 } 
 
 /* .hero {
-    padding-top: 50px; /* réduit l’espace au-dessus */
-    padding-bottom: 60px; /* conserve un peu de marge sous la section */
+    padding-top: 50px; 
+    padding-bottom: 60px; 
 }*/
 
 /* .hero {
-    padding-top: 20px; /* ou la hauteur exacte du nav */
+    padding-top: 20px; 
     margin-top: 0;
 }*/
 
@@ -391,6 +391,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

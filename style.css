@@ -172,6 +172,46 @@ section h2 {
 
 
 /* ============================= */
+/*         CONTACT ICONS        */
+/* ============================= */
+
+.contact {
+    max-width: 900px;
+    margin: 80px auto 0 auto;
+}
+
+.contact-item {
+    margin-top: 20px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #38bdf8;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: white;
+}
+
+.contact-item a:hover i {
+    transform: scale(1.2);
+    color: #7dd3fc;
+}
+
+
+
+
+/* ============================= */
 /*      CARTES PROJETS          */
 /* ============================= */
 
@@ -325,6 +365,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

@@ -27,6 +27,19 @@ a {
     margin-right: 6cm;
 }
 
+
+
+/* ============================= */
+/*        COULEUR JAUNE          */
+/* ============================= */
+
+.highlight {
+    color: #D4A017; /* jaune moutarde */
+    font-weight: 700; /* en gras */
+}
+
+
+
 /* ============================= */
 /*        PHOTO PROFIL          */
 /* ============================= */
@@ -391,6 +404,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

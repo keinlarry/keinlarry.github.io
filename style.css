@@ -77,35 +77,47 @@ nav a:hover {
 /* ============================= */
 
 .hero {
-    padding: 80px 0;
-    max-width: 800px;
+    padding: 100px 0 80px 0;
+    max-width: 900px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 44px;
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 18px;
+.hero-subtitle {
+    font-size: 19px;
     color: #cbd5e1;
+    max-width: 750px;
 }
 
-.btn {
-    display: inline-block;
+.hero-focus {
     margin-top: 25px;
-    background-color: #38bdf8;
-    padding: 12px 28px;
-    border-radius: 8px;
-    font-weight: 600;
-    color: black;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 15px;
+    color: #38bdf8;
+    letter-spacing: 1px;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(56,189,248,0.4);
+.hero-buttons {
+    margin-top: 35px;
+    display: flex;
+    gap: 20px;
 }
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #38bdf8;
+    color: #38bdf8;
+}
+
+.btn-outline:hover {
+    background: #38bdf8;
+    color: black;
+}
+
+
+
 
 /* ============================= */
 /*        SECTIONS TITLES       */
@@ -365,6 +377,7 @@ footer {
         height: 80px;
     }
 }
+
 
 
 

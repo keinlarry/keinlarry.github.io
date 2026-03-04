@@ -138,11 +138,14 @@ section h2 {
     gap: 25px;
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;     /* supprime soulignement */
+    color: inherit;            /* garde texte blanc */
 }
 
 .card:hover {
     transform: translateY(-8px);
     box-shadow: 0 10px 25px rgba(56,189,248,0.3);
+    cursor: pointer;
 }
 
 .card img {
@@ -271,4 +274,5 @@ footer {
         height: 80px;
     }
 }
+
 
